@@ -1,0 +1,43 @@
+// #region Icons
+.icon {
+  width: $mobile-icons;
+  height: $mobile-icons;
+
+  &--phone {
+    display: block;
+    background-image: url(../imgs/phone-number.png);
+    width: $mobile-icons;
+    height: $mobile-icons;
+  }
+
+  &--burger {
+    display: block;
+    background-image: url(../imgs/icon-burger-menu.png);
+    width: $mobile-icons;
+    height: $mobile-icons;
+  }
+
+  &--close {
+    background-image: url(../imgs/icon-close.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+
+
+    @include on-tablet {
+      margin-right: 0;
+      align-items: center;
+    }
+
+    @include on-desktop {
+      align-items: center;
+      margin-right: 5px;
+    }
+
+  }
+
+  @include icons-tablet-desktop;
+
+}
+
+// #endregion

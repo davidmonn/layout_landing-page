@@ -1,0 +1,143 @@
+.contact {
+  display: grid;
+  width: 320px;
+  padding-inline: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  margin-inline: auto;
+
+  @include on-tablet {
+    width: 744px;
+    padding-inline: 72px;
+  }
+
+  @include on-desktop {
+    width: 1260px;
+    padding-inline: 120px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__card {
+    display: grid;
+    column-gap: 111px;
+    width: 280px;
+
+    @include on-tablet {
+      // padding-inline: auto;
+    }
+
+    @include on-desktop {
+      width: 1020px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__title {
+    width: 280px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-block: 64px 48px;
+
+    @include on-tablet {
+      margin-block: 120px 72px;
+    }
+  }
+
+  &__message {
+    display: block;
+    width: 280px;
+  }
+
+  &__input {
+    background-color: #F9F9F9;
+
+    padding-inline: 16px;
+    padding-block: 14px;
+
+    height: 48px;
+    width: 280px;
+
+    margin-block: 0 16px;
+
+    border-radius: 8px;
+    border: none;
+
+    font-size: 14px;
+    font-weight: 400;
+    font-family: $font-default;
+
+    line-height: 140%;
+
+    @include on-tablet {
+      width: 600px;
+    }
+
+    @include on-desktop {
+      width: 498px;
+    }
+
+  }
+
+  &__area {
+    height: 148px;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    background-color: #1B2129;
+    height: 56px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 48px;
+
+    @include on-tablet {
+      width: 600px;
+    }
+
+    @include on-desktop {
+      width: 498px;
+    }
+  }
+
+  &__send {
+    color: #FFF;
+
+    width: 280px;
+    height: 27px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    line-height: 56px;
+  }
+
+  .info {
+    color: #9393A3;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 8px;
+  }
+
+  &__phone-number {
+    text-decoration: none;
+    color: #191919;
+  }
+
+}
+
+.infos__margin {
+  margin-bottom: 24px;
+}
+
+.infos__margin:last-child {
+  margin: 0;
+}
+
+.contact__card-infos {
+  width: 411px;
+
+  @include on-desktop {
+    height: 411px;
+  }
+}

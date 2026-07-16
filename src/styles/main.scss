@@ -1,3 +1,46 @@
-body {
-  margin: 0;
+@import "../../src/styles/blocs/var";
+@import "../../src/styles/utils/mixins";
+@import "../../src/styles/blocs/header";
+@import "../../src/styles/blocs/icons";
+@import "../../src/styles/blocs/nav";
+@import "../../src/styles/blocs/top-bar";
+@import "../../src/styles/blocs/recommend";
+@import "../../src/styles/blocs/product";
+@import "../../src/styles/blocs/categories";
+@import "../../src/styles/blocs/about";
+@import "../../src/styles/blocs/contact";
+
+// #region Page
+* {
+  box-sizing: border-box;
 }
+
+.page {
+  font-family: $font-default;
+  color: $color-default;
+  scroll-behavior: smooth;
+  min-width: $mobilo-responsive;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+
+    .page__menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+
+      opacity: 0;
+      pointer-events: none;
+
+        &:target {
+          opacity: 1;
+          pointer-events: all;
+        }
+    }
+
+}
+
+// #endregion
