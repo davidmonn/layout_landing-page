@@ -34,7 +34,6 @@
 
     &__container {
       display: grid;
-      background-color: red;
       gap: 20px 40px;
 
       @include on-tablet {
@@ -79,7 +78,6 @@
   }
 
   &__title {
-    // background-color: blue;
     font-weight: 700;
     font-size: 18px;
     line-height: 140%;

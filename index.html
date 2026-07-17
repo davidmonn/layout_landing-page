@@ -9,7 +9,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>Bang & Olufsen</title>
+
+    <link
+      rel="shortcut icon"
+      href="./src/imgs/logo.png"
+      type="image/x-icon"
+    />
 
     <link
       rel="stylesheet"
@@ -306,14 +312,13 @@
       <section
         class="contact"
         id="contact"
-        >
-
+      >
         <h2 class="contact__title">Contact us</h2>
 
         <article class="contact__card">
           <form
             action="#"
-            post="GET"
+            method="GET"
             class="contact__message"
           >
             <label>
@@ -322,6 +327,7 @@
                 name="name"
                 placeholder="Name"
                 class="contact__input"
+                required
               />
             </label>
             <label>
@@ -330,28 +336,29 @@
                 name="email"
                 placeholder="Email"
                 class="contact__input"
+                required
               />
             </label>
             <textarea
               name="message"
               placeholder="Message"
               class="contact__input contact__area"
+              required
             ></textarea>
-            <div class="contact__button">
-              <a
-                href="#"
-                class="contact__send"
-              >
-                Send
-              </a>
-            </div>
+
+            <button
+              href="#"
+              class="contact__send"
+            >
+              Send
+            </button>
           </form>
 
           <div class="contact__card-infos">
             <div class="contact__phone infos__margin">
               <p class="contact__phone-text info">Phone</p>
               <a
-                href="#+1 234 5555-55-55"
+                href="+1 234 5555-55-55"
                 class="contact__phone-number"
               >
                 +1 234 5555-55-55
