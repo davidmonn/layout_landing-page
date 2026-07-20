@@ -1,17 +1,6 @@
 .about {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  width: 320px;
+  width: 100%;
   height: auto;
-  margin-inline: auto;
-
-  @include on-tablet {
-    width: 744px;
-  }
-
-  @include on-desktop {
-    width: 1260px;
-  }
 
   &__content {
     padding: 0;
@@ -21,23 +10,20 @@
 }
 
 .about__image {
-  grid-template-columns: repeat(1, 1fr);
   background-image: url(../imgs/background-mob.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  min-width: 320px;
+  width: 100%;
   min-height: 200px;
 
   @include on-tablet {
     background-image: url(../imgs/background-tablet.png);
-    min-width: 744px;
     min-height: 400px;
   }
 
   @include on-desktop {
     background-image: url(../imgs/background-desktop.png);
-    grid-template-columns: repeat(1, 1fr);
     min-height: 460px;
   }
 }
@@ -48,25 +34,25 @@
 
 .about__infos {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
+  max-width: 320px;
+  margin-inline: auto;
   margin-block: 46px 48px;
   padding-inline: 20px;
 
   @include on-tablet {
-    align-items: center;
-    width: 100%;
+    max-width: 744px;
     grid-template-columns: repeat(2, 1fr);
-    margin-inline: 45px;
+    align-items: center;
   }
 
   @include on-desktop {
-    width: 100%;
+    max-width: 1260px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .about__title {
-  display: grid;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 24px;
@@ -74,13 +60,11 @@
   @include on-tablet {
     width: 287px;
     font-size: 40px;
-    font-weight: 700;
   }
 
   @include on-desktop {
-    font-size: 48px;
-    font-weight: 700;
     width: 498px;
+    font-size: 48px;
     margin-block: 120px;
     margin-inline: 37px;
   }
@@ -99,10 +83,6 @@
 
   @include on-desktop {
     width: 411px;
-
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 140%;
     margin-block: 120px;
   }
 }

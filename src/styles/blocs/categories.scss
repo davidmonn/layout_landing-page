@@ -2,6 +2,7 @@
   max-width: 280px;
   margin-inline: auto;
 
+
   @include on-tablet {
     min-width: 600px;
   }
@@ -72,6 +73,12 @@
   }
 
   &__photo {
+    transition: 0.7s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -102,6 +109,12 @@
   display: grid;
   width: 100%;
   height: 56px;
+
+  transition: 0.7s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
   text-decoration: none;
   text-align: center;

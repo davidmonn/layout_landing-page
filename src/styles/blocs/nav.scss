@@ -22,7 +22,6 @@
     @include on-desktop {
       padding-inline: 120px;
     }
-
   }
 
   &__phone-number {
@@ -42,10 +41,12 @@
     width: 280px;
 
     margin-bottom: 16px;
-    transition: 0.5s;
+
+    transition: color 0.3s ease, transform 0.3s ease;
 
     &:hover {
       color: #CCC;
+      transform: scale(1.05);
     }
   }
 
@@ -69,13 +70,13 @@
 
     width: fit-content;
 
-    transition: 0.5s;
+    transition: color 0.3s ease, transform 0.3s ease;
 
     &:hover {
       color: #CCC;
+      transform: scale(1.05);
     }
   }
-
 }
 
 .nav__item:last-child {
@@ -87,15 +88,17 @@
 }
 
 .nav__link {
+  display: inline-block;
   color: inherit;
   text-decoration: none;
   font-size: 22px;
-  transition: 0.5s;
+
+  transition: color 0.3s ease, transform 0.3s ease;
 
   &:hover {
     color: #CCC;
+    transform: scale(1.05);
   }
-
 }
 
 .page:has(.page__menu:target) {
